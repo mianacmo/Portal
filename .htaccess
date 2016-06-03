@@ -1,0 +1,11 @@
+RewriteEngine on
+RewriteCond %{SCRIPT_FILENAME} !-d  
+RewriteCond %{SCRIPT_FILENAME} !-f  
+RewriteRule ^(.*)$ $1.php
+
+Rewriterule ^noticia/([0-9]+)/(.+)$ noticias.php?id=$1&titulo=$2
+Rewriterule ^productosyservicios/([0-9]+)/(.+)$ productos.php?id=$1&titulo=$2
+Rewriterule ^conozcacofide/([0-9]+)/(.+)$ conozca.php?id=$1&titulo=$2
+Rewriterule ^relacioninversionistas/([0-9]+)/(.+)$ relacion.php?id=$1&titulo=$2
+Rewriterule ^enlace/([0-9]+)/(.+)$ enlaces.php?id=$1&titulo=$2
+Rewriterule ^gobierno-corporativo/([0-9]+)/(.+)$ gobierno.php?id=$1&titulo=$2
